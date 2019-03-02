@@ -1,0 +1,147 @@
+.grid .grid-item:hover .title-bar:hover .title-text-bottom, .grid .grid-item:hover .title-bar:hover .title-text-top {
+  transition-duration: 1s;
+  height: auto;
+  -webkit-transform: translateY(0) rotate(0deg);
+  -ms-transform: translateY(0) rotate(0deg);
+  transform: translateY(0) rotate(0deg);
+}
+
+.grid .grid-item .grid-text {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  top: 50%;
+  margin-top: -20px;
+  text-align: center;
+}
+
+.grid .grid-item .title-bar .title-text-bottom-height2, .grid .grid-item .title-bar .title-text-bottom, .grid .grid-item .title-bar .title-text-top {
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  font-family: "Georgia";
+  font-weight: bold;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.grid .grid-item:hover .title-bar .title-text-top, .grid .grid-item:hover .title-bar .title-text-bottom, .grid .grid-item:hover .title-bar .title-text-bottom-height2 {
+  transition-duration: 1s;
+  opacity: 1;
+  visibility: visible;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  font-weight: bold;
+  color: black;
+  max-width: 1080px;
+  text-align: left;
+  margin: 10px auto;
+}
+
+#container {
+  max-width: 1080px;
+  margin: 100px auto;
+}
+
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.grid .grid-item {
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 30px;
+  background-color: #4f5e77;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: center;
+}
+.grid .grid-item .title-bar {
+  visibility: hidden;
+  width: 0px;
+  height: 100%;
+  background-color: #88a1cc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition-duration: 1s;
+  color: white;
+}
+.grid .grid-item .title-bar .title-text-top {
+  -webkit-transform: translateY(50px) rotate(-90deg);
+  -ms-transform: translateY(50px) rotate(-90deg);
+  transform: translateY(50px) rotate(-90deg);
+}
+.grid .grid-item .title-bar .title-text-bottom {
+  -webkit-transform: translateY(-50px) rotate(-90deg);
+  -ms-transform: translateY(-50px) rotate(-90deg);
+  transform: translateY(-50px) rotate(-90deg);
+}
+.grid .grid-item .title-bar .title-text-bottom-height2 {
+  transform-origin: center center;
+  -webkit-transform: translateY(-140px) rotate(-90deg);
+  -ms-transform: translateY(-140px) rotate(-90deg);
+  transform: translateY(-140px) rotate(-90deg);
+}
+.grid .grid-item:hover .title-bar {
+  transition-duration: 1s;
+  visibility: visible;
+  width: 25%;
+}
+.grid .grid-item:hover .title-bar:hover {
+  width: 150px;
+}
+.grid .grid-item:hover .title-bar:hover .title-text-top {
+  margin-top: 75px;
+}
+.grid .grid-item:hover .title-bar:hover .title-text-bottom {
+  width: 100px;
+  margin-bottom: 75px;
+}
+.grid .grid-item:hover .title-bar:hover .title-text-bottom-height2 {
+  -webkit-transform: translateY(0) rotate(0deg);
+  -ms-transform: translateY(0) rotate(0deg);
+  transform: translateY(0) rotate(0deg);
+  white-space: normal;
+  margin-bottom: 75px;
+  width: 100px;
+}
+.grid .grid-item--width2 {
+  width: 450px;
+}
+.grid .grid-item--height2 {
+  height: 525px;
+}
+.grid .grid-item--height3 {
+  height: 375px;
+}
+
+/*# sourceMappingURL=masonrydemo.css.map */
